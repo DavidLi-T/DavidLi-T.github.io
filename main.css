@@ -6,7 +6,6 @@ body{
 	font-size:112.5%;
 	color:#444;
 	padding:010px 040px;
-	border-top:8px solid firebrick;
 }
 
 h1{
@@ -19,6 +18,10 @@ h1{
 h2, h3{
 	line-height:1.2;
 	font-family:"Times New Roman", Times, serif;
+}
+
+hr#topbar {
+	border-top:8px solid firebrick;
 }
 
 div#profilediv {
@@ -41,17 +44,29 @@ div#profiledesc {
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
-  div#profilediv {
-    flex-direction: column;
-  }
-  
-  img#profilepic {
-	  display: block;
-	  margin: 40px auto;
-  }
-  
-  div#profiledesc {
-	  margin: 40px auto;
-	  float:none;
-  }
+	body {
+		margin:10px auto;
+		padding:010px 040px;
+	}
+	
+	hr#topbar {
+		/*display:none;*/
+	}
+
+	div#profilediv {
+		flex-direction:column;
+	}
+
+	img#profilepic {
+		display:block;
+		margin:40px auto;
+	}
+	  
+	div#profiledesc {
+		flex:1 0 0px;
+		margin:auto;
+		float:none;
+		padding:010px;
+		text-align:center;
+	}
 }
