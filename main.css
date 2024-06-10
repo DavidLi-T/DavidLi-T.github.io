@@ -42,6 +42,24 @@ div#profiledesc {
 	padding:010px 010px 010px 050px;
 }
 
+div#buttondiv {
+	display:flex;
+	margin:10px auto;
+	justify-content:space-around;
+}
+
+a.button {
+	margin:0px 20px;
+    padding:20px 30px;
+    border:0px;
+    border-radius: 12px;
+    color:#FFF;
+    background-color:firebrick;
+    text-decoration: none;
+	text-align: center;
+	flex-grow: 1;
+}
+
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
 	body {
@@ -68,5 +86,13 @@ div#profiledesc {
 		float:none;
 		padding:010px;
 		text-align:center;
+	}
+	
+	div#buttondiv {
+		flex-direction:column;
+	}
+	
+	a.button {
+		margin:5px 0px;
 	}
 }
