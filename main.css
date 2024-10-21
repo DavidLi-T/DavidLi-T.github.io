@@ -42,6 +42,16 @@ div#profiledesc {
 	padding:010px 010px 010px 050px;
 }
 
+img#futureschema {
+	display:flex;
+	flex: 0 1 auto;
+	margin:40px auto;
+	justify-content:center;
+	
+	max-width:100%;
+	height:auto;
+}
+
 div#buttondiv {
 	display:flex;
 	margin:10px auto;
